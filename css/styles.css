@@ -1,0 +1,165 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  margin: 0;
+}
+
+/* CARD */
+
+.main-body {
+  display: flex;
+  height: 95vh;
+  place-items: center center;
+  width: 100vw;
+}
+
+.card-body{
+  background-color: white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 40% 60%;
+  height: 90vh;
+  margin: auto;
+  width: 90vw;
+}
+
+.card-img {
+  background-image: url(../images/image-product-mobile.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+}
+
+.card-info {
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 1.5rem;
+}
+
+.card-info h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: 'Fraunces', serif;
+  margin: 10px 0;
+}
+
+.card-info h2 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  margin: 15px 0 0;
+  text-transform: uppercase;
+}
+
+.text-info {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.new-price {
+  color: hsl(158, 36%, 37%);
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Fraunces', serif;
+  margin: 0 15px 10px 0;
+  vertical-align: middle;
+
+}
+
+.old-price {
+  display: inline-block;
+  text-decoration: line-through;
+  vertical-align: middle;
+  margin: 0 0 10px;
+}
+
+.btn {
+  background-color: hsl(158, 36%, 37%);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: white;
+  display: block;
+  font-weight: 700;
+  height: 50px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.btn img {
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+}
+
+
+/* FOOTER */
+
+.attribution {
+  font-size: 10px;
+  padding-top: 10px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+  text-decoration: none;
+}
+
+
+.main-footer {
+  background-color: #00000088;
+  height: 5vh;
+  margin: 0;
+  width: 100vw;
+}
+
+@media screen and (min-width: 1440px) {  
+  /* CARD */
+  
+  .card-body{
+    background-color: white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    height: 50vh;
+    margin: auto;
+    width: 40vw;
+  }
+  
+  .card-img {
+    background-image: url(../images/image-product-desktop.jpg);
+    background-size: cover;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+
+  }
+  
+  .card-info h2 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin: 15px 0 0;
+    text-transform: uppercase;
+  }
+
+  .btn {
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: hsl(158, 36%, 23%);
+  }
+
+  .attribution {
+    padding-top: 20px; 
+  }
+  
+  .attribution a:hover { 
+    color: white; 
+    text-decoration: underline  ;
+  }
+}

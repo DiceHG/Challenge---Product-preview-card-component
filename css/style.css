@@ -1,0 +1,289 @@
+body {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.clearfix::after, .row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.top-header {
+    text-align: center;
+}
+
+.top-header-logo {
+    margin: 0.5em;
+}
+
+.top-header-nav ul {
+    background-color: #612674;
+    list-style: none;
+    margin: 0;
+    padding: 1em 0;
+}
+
+.top-header-nav li a {
+    display: block;
+    padding: 1em;
+
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.18em;
+    transition: background-color 0.5s, font-weight 0.1s;
+}
+
+.top-header-nav li a:hover {
+    background-color: #7c3792;
+    font-weight: bold;
+}
+
+.main-header {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.icon-play {
+    display: none;
+    padding-top: 2em;
+}
+
+.icon-play img {
+    height: 100%;
+}
+
+.main-header-title {
+    padding: 1.5em;
+    margin: 0;
+
+    font-size: 1.25em;
+    text-transform: capitalize;
+    color: #612674;
+}
+
+.main-header-text {
+    padding: 0 1.5em;
+    margin: 0 0 0.5em;
+
+    font-size: 1em;
+    color: #a87bb7;
+    line-height: 1.5;
+
+}
+
+.default-button {
+    display: inline-block;
+    
+    margin: 1em auto;
+    padding: 1em 0;
+    width: 13em;
+    box-sizing: border-box;
+
+    background-color: #58c4c4;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1px;
+    border-radius: 0.35em;
+    transition: background-color 200ms;
+}
+
+.default-button:hover {
+    background-color: #37a0a0;
+}
+
+.middle-content {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 2em;
+}
+
+.middle-content span[class^=icon] {
+    font-size: 3em;
+    color: #612674;
+}
+
+.middle-content-title {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #612674;
+}
+
+.middle-content p {
+    margin: 1.5em;
+
+    font-size: 1em;
+    color: #222;
+    line-height: 1.5;
+}
+
+.main-content {
+    padding: 3em;
+}
+
+.main-content-article {
+    margin-bottom: 2.5em;
+}
+
+.main-content-article:last-child {
+    margin-bottom: 0;
+}
+
+.main-content-title {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #612674;
+}
+
+.main-content p {
+    line-height: 1.2;
+}
+
+.footer {
+    background-color: #25303e;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footer p {
+    display: block;
+    padding: 1.5em 1em 2.5em;
+    color: #83969f;
+    transform: color 0.2s;
+    margin: 0;
+}
+
+.footer p:hover {
+    color: #b3c6cf;
+}
+
+.footer-menushare {
+    background-color: #303d4c;
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 1em;
+}
+
+.footer-menushare li {
+    display: inline-block;    
+    margin: 0 2em;
+    padding: 0;
+}
+
+.footer-menushare a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color .2s;
+}
+
+.footer-menushare a:hover {
+    color: #44d7d7;
+}
+
+@media screen and (min-width: 48.75rem) {  
+    .top-header-logo {
+        float: left;
+    }
+    
+    .top-header-nav ul {
+        float: right;
+        background-color: transparent;
+    }
+
+    .top-header-nav ul li {
+        display: inline-block;
+    }
+    
+    .top-header-nav li a {
+        display: block;
+
+        font-weight: bolder;
+        color: #7c3792;
+        letter-spacing: 0.125em;
+        transition: background-color 0.5s;
+    }
+    
+    .top-header-nav li a:hover {
+        background-color: #e7d9fd;
+    }
+
+    .main-header {
+        background-color: #521a66;
+    }
+    
+    .icon-play {
+        display: block;
+        height: 5em;
+    }
+
+    .main-header-title {
+        font-size: 1.375em;
+        color: #f3f3f3;
+    }
+    
+    .main-header-text {
+        font-size: 1.2em;
+        font-weight: 400;
+        color: #f3f3f3;
+    }
+
+    .collum {
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+
+    .main-content .default-button {
+        float: right;
+    }
+}
+
+@media screen and (min-width: 62.5rem) {
+    .main-header {
+        background-image: url(../images/bg_topo_1198x670.jpg);
+        background-position: top center;
+        background-size: cover;
+        padding-top: 30em;
+        padding-bottom: 3em;
+    }
+}
+
+@media screen and (min-width: 100rem) {
+    .main-header {
+        background-image: url(../images/bg_topo_1600x1374.jpg);
+        background-position: center center;
+        padding: 30em 20em 3em;
+    }
+
+    .icon-play {
+        height: 8em;
+    }
+
+    .collum {
+        width: 23%;
+    }
+    
+    .collum2 {
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+
+    .main-content .default-button {
+        float: none;
+    }
+}
